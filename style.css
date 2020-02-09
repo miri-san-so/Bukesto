@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: none;
+  background-color: #1d1c21;
+  color: #f22e44;
+}
+
+nav {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+}
+
+nav > button {
+  background-color: transparent;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  padding: 20px 50px;
+  font-family: "Open Sans", sans-serif;
+  color: #f22e44;
+  font-weight: 400;
+  font-size: 0.8em;
+  letter-spacing: 5px;
+  margin-left: 60%;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: transparent;
+  border: 1px solid #f22e44;
+  animation: goop 1s ease forwards;
+}
+
+button:focus {
+  outline: none;
+}
+
+@keyframes goop {
+  0% {
+    border-radius: 0px;
+  }
+  100% {
+    border-radius: 100px;
+  }
+}
+
+nav > .tagline > h1 {
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+  font-size: 3em;
+}
+
+nav > .tagline > p {
+  font-size: 1em;
+}
+
+marquee {
+  padding: 0.4em;
+
+  font-family: "Abril Fatface", cursive;
+  font-size: 4em;
+  color: transparent;
+  -webkit-text-stroke: 1px #f22e44;
+}
+
+.options {
+  font-family: "Abril Fatface", cursive;
+  color: transparent;
+  -webkit-text-stroke: 1px #f22e44;
+  font-size: 5em;
+}
+
+table {
+  border: 1px solid #f22e44;
+  border-spacing: 0ch;
+}
+
+table tr td {
+  padding: 0.4em;
+}
+
+table tr td a {
+  text-decoration: none;
+  color: transparent;
+  -webkit-text-stroke: 1px #f22e44;
+}
+
+table tr td a:hover {
+  color: #f22e44;
+}
+
+.cursor {
+  width: 4vw;
+  height: 4vw;
+  border-radius: 4vw;
+  border: 1px solid #f22e44;
+  position: absolute;
+  pointer-events: none;
+  box-sizing: border-box;
+  transform: translate(-2vw, -2vw);
+  transition: all 100ms ease;
+}
+
+.addstuff {
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  z-index: 2;
+}
+
+/* ANIMATIING THE GODDAMN LOGO */
+
+#circle #Polygon1{
+    transform-origin: center;
+    animation: around 8s ease infinite;
+}
+#circle #Polygon2{
+        transform-origin: center;
+    animation: around 8s ease infinite 400ms;
+}
+#circle #Polygon3{
+        transform-origin: center;
+    animation: around 8s ease infinite 800ms;
+}
+#circle #Polygon4{
+        transform-origin: center;
+    animation: around 8s ease infinite 1200ms;
+}
+
+@keyframes around{
+    0%{transform: rotateZ(0deg);}
+    50%{transform: rotateZ(360deg);}
+    100%{transform: rotateZ(0deg);}
+}

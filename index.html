@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bukesto</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <nav>
+      <svg
+        width="132"
+        height="132"
+        viewBox="0 0 132 132"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="circle">
+          <circle
+            id="Ellipse 1"
+            cx="65.7609"
+            cy="65.7609"
+            r="46"
+            stroke="#F22E44"
+          />
+          <path
+            id="Polygon1"
+            d="M26.3568 88.5109L65.7609 20.2609L105.165 88.5109H26.3568Z"
+            stroke="#F22E44"
+          />
+          <path
+            id="Polygon2"
+            d="M21.8113 77.5372L77.5372 21.8113L97.9343 97.9343L21.8113 77.5372Z"
+            stroke="#F22E44"
+          />
+          <path
+            id="Polygon3"
+            d="M20.2609 65.7609L88.5109 26.3568L88.5109 105.165L20.2609 65.7609Z"
+            stroke="#F22E44"
+          />
+          <path
+            id="Polygon4"
+            d="M21.8113 53.9847L97.9343 33.5876L77.5372 109.711L21.8113 53.9847Z"
+            stroke="#F22E44"
+          />
+        </g>
+      </svg>
+      <div class="tagline">
+        <h1>Bukesto</h1>
+        <p>we look out for your cravings</p>
+      </div>
+      <button type="submit" class="sign">SIGN UP</button>
+    </nav>
+    <table width="100%" height="100%" border="1px">
+      <tr>
+        <td colspan="2">
+          <p>
+            <marquee scrollamount="20" behavior="scroll" direction="left">
+              FROM • YOUR • LOCAL • CUSINE • TO • THE • CONTINENTAL • WE • GOT •
+              YOU • COVERED / <a href="#">ORDER NOW</a>
+            </marquee>
+          </p>
+        </td>
+      </tr>
+      <tr class="options">
+        <td><a href="#" class="booktable" open="no">Book a Table</a></td>
+        <td><a href="#">Dine Out</a></td>
+      </tr>
+      <tr class="options">
+        <td><a href="#">Party Booking</a></td>
+        <td><a href="#">Offers</a></td>
+      </tr>
+    </table>
+
+    <script>
+      let cursor = document.querySelector(".cursor");
+      let sign = document.querySelector(".sign");
+      sign.addEventListener("mouseover", e => {
+        cursor.style.opacity = 0;
+      });
+      sign.addEventListener("mouseleave", e => {
+        cursor.style.opacity = 1;
+      });
+      document.addEventListener("mousemove", e => {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.left = x + "px";
+        cursor.style.top = y + "px";
+      });
+    </script>
+  </body>
+</html>
